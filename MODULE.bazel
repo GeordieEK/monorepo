@@ -2,9 +2,13 @@ module(
     name = "monorepo",
     version = "1.0",
 )
+
 ######################
 # GOLANG SUPPORT
 ######################
 
-bazel_dep(name = "rules_go", version = "0.48.0")
+bazel_dep(
+    name = "rules_go",
+    version = "0.50.1",
+)
 

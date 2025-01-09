@@ -1,4 +1,8 @@
 # Enable Bzlmod for every Bazel command
 common --enable_bzlmod
 
+# For test commands
 test --test_output=errors
+
+ # Use an out of source build, stops bazel-* files cluttering up the workspace
+build --symlink_prefix=/
