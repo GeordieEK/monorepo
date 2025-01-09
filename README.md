@@ -1,8 +1,6 @@
 # The Monorepo
 
-This is a monorepo of various personal projects.
-
-Bazel manages the build, test, and dependency processes.
+This is a monorepo of various personal projects, with Bazel managing the build, test, and dependency processes.
 
 ## Structure
 
