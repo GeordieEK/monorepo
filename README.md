@@ -18,3 +18,4 @@ This is a monorepo of various personal projects, with Bazel managing the build, 
 ## Credits / References
 
 [These Bazel examples](https://github.com/aspect-build/bazel-examples/blob/main/MODULE.bazel) by @aspect-build.
+[The official bazel examples](https://github.com/bazelbuild/examples/tree/main) are pretty good starts too.
