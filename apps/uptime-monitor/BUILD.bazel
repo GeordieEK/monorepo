@@ -1,0 +1,21 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_binary(
+    name = "uptime-monitor",
+    srcs = [
+        "cmd/main.go",
+    ],
+    deps = [
+        ":monitor",  # Core logic defined in internal/monitor.go
+        "//pkg:utils",  # Shared utilities if you have any in the pkg folder
+    ],
+)
+
+go_library(
+    name = "monitor",
+    srcs = [
+        "internal/monitor.go",
+    ],
+    # importpath is optional, but it specifies the package path in Go for better integration with tooling (e.g., go get).
+    importpath = "my-monorepo/apps/uptime-monitor/internal/monitor", 
+)
